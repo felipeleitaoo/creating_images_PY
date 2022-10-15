@@ -1,10 +1,10 @@
 from PIL import Image
 
 WIDTH, HEIGHT = 1024, 512
-FILENAME = ("outroteste_pillow.png", "PNG")
+FILENAME      = ("outroteste_pillow.png", "PNG")
 
-pillow_obj = Image.new(mode = "RGB", size = (WIDTH, HEIGHT))
-pixel_set  = pillow_obj.load()
+pillow_obj    = Image.new(mode = "RGB", size = (WIDTH, HEIGHT))
+pixel_set     = pillow_obj.load()
 
 for row in range(HEIGHT // 2):
     for col in range(WIDTH // 2):
